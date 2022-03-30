@@ -31,7 +31,7 @@ public class LearnController {
 		Page<Post> page = this.blogService.getPublishedPosts(PageableFactory.first(4));
 		Page<PostView> postViewPage = PostView.pageOf(page, dateFactory);
 		List<PostView> posts = new ArrayList<>(postViewPage.getContent());
-		model.addAttribute("newestPost", posts.remove(0));
+		//model.addAttribute("newestPost", posts.remove(0));
 		model.addAttribute("posts", posts);
 		return "learn/index";
 	}

@@ -16,8 +16,8 @@ spring:
             # locally, i.e. at http://localhost:8080. Production values must be overridden
             # using SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GITHUB_CLIENTID and
             # SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GITHUB_CLIENTSECRET, respectively.
-            client-id: fb06c006c2ed62fe9e8b
-            client-secret: 164264e3f6d70c7c21713b7fa64225cb8d6107b2
+            client-id: fbe0f984070dffc01b10
+            client-secret: 05f3c6043087e517f46490fac88738c05cbc6fe2
             # Request the 'read: org' OAuth scope, so that we can check whether the
             # authenticated user belongs to the configured `sagan.site.github.team` for
             # admin access.
@@ -98,7 +98,8 @@ spring:
 sagan:
   site:
     renderer:
-      service-url: https://springio-renderer-dev.sc2-04-pcf1-apps.oc.vmware.com/
+      #service-url: https://springio-renderer-dev.sc2-04-pcf1-apps.oc.vmware.com/
+      service-url: http://localhost:8081/
     disqus:
       short-name: spring-io-staging
 ---
